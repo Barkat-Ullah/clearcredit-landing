@@ -82,7 +82,7 @@ export const Navbar = () => {
                 aria-label="ClearCredit Home"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                <div className="relative h-7 sm:h-8 md:h-9 w-36 sm:w-44 md:w-48 aspect-[50/9]">
+                <div className="relative h-7 sm:h-8 md:h-9 w-36 sm:w-44 md:w-48 aspect-50/9">
                   <Image
                     src="/nav-logo.png"
                     alt="ClearCredit"
@@ -128,7 +128,7 @@ export const Navbar = () => {
                   "bg-primary-1 hover:bg-primary-1-hover text-white",
                   "text-xs sm:text-sm font-semibold rounded-xl",
                   "px-3.5 sm:px-4 md:px-5 py-2.5",
-                  "min-h-[44px] shadow-sm hover:shadow-md hover:shadow-primary-1/25",
+                  "min-h-11 shadow-sm hover:shadow-md hover:shadow-primary-1/25",
                   "transition-all duration-200 active:scale-[0.98]",
                   "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-1 focus-visible:ring-offset-2"
                 )}
@@ -155,7 +155,7 @@ export const Navbar = () => {
               <button
                 type="button"
                 onClick={() => setIsMobileMenuOpen((prev) => !prev)}
-                className="inline-flex items-center justify-center min-w-[44px] min-h-[44px] w-11 h-11 rounded-lg text-primary-2 hover:bg-primary-3/50 hover:text-primary-1 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-1 cursor-pointer"
+                className="inline-flex items-center justify-center min-w-11 min-h-11 w-11 h-11 rounded-lg text-primary-2 hover:bg-primary-3/50 hover:text-primary-1 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-1 cursor-pointer"
                 aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
                 aria-expanded={isMobileMenuOpen}
                 aria-controls="mobile-navigation-drawer"
@@ -173,7 +173,7 @@ export const Navbar = () => {
               <button
                 type="button"
                 onClick={() => setIsMobileMenuOpen((prev) => !prev)}
-                className="inline-flex items-center justify-center min-w-[44px] min-h-[44px] w-11 h-11 rounded-lg text-primary-2 hover:bg-primary-3/50 hover:text-primary-1 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-1 cursor-pointer"
+                className="inline-flex items-center justify-center min-w-11 min-h-11 w-11 h-11 rounded-lg text-primary-2 hover:bg-primary-3/50 hover:text-primary-1 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-1 cursor-pointer"
                 aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
                 aria-expanded={isMobileMenuOpen}
                 aria-controls="mobile-navigation-drawer"
@@ -217,7 +217,7 @@ export const Navbar = () => {
             {/* Top Bar with Logo and Close Button */}
             <div>
               <div className="flex items-center justify-between pb-4 border-b border-primary-2/10">
-                <div className="relative h-7 w-36 aspect-[50/9]">
+                <div className="relative h-7 w-36 aspect-50/9">
                   <Image
                     src="/nav-logo.png"
                     alt="ClearCredit"
@@ -229,7 +229,7 @@ export const Navbar = () => {
                 <button
                   type="button"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="inline-flex items-center justify-center min-w-[40px] min-h-[40px] w-10 h-10 rounded-lg text-primary-2 hover:bg-primary-3/50 hover:text-primary-1 transition-colors"
+                  className="inline-flex items-center justify-center min-w-10 min-h-10 w-10 h-10 rounded-lg text-primary-2 hover:bg-primary-3/50 hover:text-primary-1 transition-colors"
                   aria-label="Close navigation menu"
                 >
                   <X className="w-5 h-5 stroke-[2.2]" />
@@ -244,7 +244,7 @@ export const Navbar = () => {
                     href={item.href}
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={cn(
-                      "flex items-center justify-between px-3.5 py-3 rounded-xl text-base font-medium transition-all duration-150 min-h-[44px]",
+                      "flex items-center justify-between px-3.5 py-3 rounded-xl text-base font-medium transition-all duration-150 min-h-11",
                       item.active
                         ? "bg-primary-3/70 text-primary-1 font-semibold border border-primary-1/20"
                         : "text-primary-2 hover:bg-primary-3/30 hover:text-primary-1"
@@ -279,7 +279,7 @@ export const Navbar = () => {
                   "flex items-center justify-center gap-2.5",
                   "w-full bg-primary-1 hover:bg-primary-1-hover text-white",
                   "text-base font-semibold rounded-xl",
-                  "py-3.5 px-4 min-h-[48px] shadow-md shadow-primary-1/20",
+                  "py-3.5 px-4 min-h-12 shadow-md shadow-primary-1/20",
                   "transition-all duration-200 active:scale-[0.98]"
                 )}
                 onClick={() => setIsMobileMenuOpen(false)}

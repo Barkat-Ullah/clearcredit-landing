@@ -9,7 +9,7 @@ export const Footer = () => {
       <Container size="7xl">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-white/10">
           <div className="md:col-span-1">
-            <div className="relative h-8 w-44 aspect-[50/9] mb-4">
+            <div className="relative h-8 w-44 aspect-50/9 mb-4">
               <Image
                 src="/footer-logo.png"
                 alt="ClearCredit"
