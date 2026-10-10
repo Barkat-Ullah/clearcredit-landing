@@ -1,11 +1,12 @@
-'use client';
+"use client";
+
 
 const HomeSection = () => {
-    return (
-        <div>
-            <h1>HomeSection</h1>
-        </div>
-    );
+  return (
+    <>
+    
+    </>
+  );
 };
 
 export default HomeSection;
