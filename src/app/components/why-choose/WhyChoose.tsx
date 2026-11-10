@@ -67,7 +67,7 @@ const features: FeatureCardData[] = [
 
 export const WhyChoose = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#FEFEFF] via-[#F8FDFF] to-[#F0FAFD] py-16 sm:py-20 md:py-24">
+    <section className="relative overflow-hidden bg-linear-to-b from-[#FEFEFF] via-brand-bg to-[#F0FAFD] py-16 sm:py-20 md:py-24">
       <Container size="7xl" className="relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto">
@@ -88,7 +88,7 @@ export const WhyChoose = () => {
           {features.map((feature) => (
             <div
               key={feature.id}
-              className="relative bg-white rounded-[24px] sm:rounded-[28px] border border-[#E5EDF0] p-6 sm:p-8 pt-10 shadow-[0_12px_36px_rgba(5,200,232,0.08)] hover:shadow-[0_18px_44px_rgba(5,200,232,0.14)] hover:border-primary-1/30 transition-all flex flex-col justify-between group"
+              className="relative bg-white rounded-3xl sm:rounded-[28px] border border-[#E5EDF0] p-6 sm:p-8 pt-10 shadow-[0_12px_36px_rgba(5,200,232,0.08)] hover:shadow-[0_18px_44px_rgba(5,200,232,0.14)] hover:border-primary-1/30 transition-all flex flex-col justify-between group"
             >
               {/* Floating Dark Navy Squircle Icon Box */}
               <div className="absolute -top-7 left-6 sm:left-8 w-14 h-14 rounded-2xl bg-primary-2 flex items-center justify-center shadow-md shadow-primary-2/20">
