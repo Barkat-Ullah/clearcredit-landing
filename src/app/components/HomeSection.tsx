@@ -1,9 +1,10 @@
 "use client";
 
-import React from "react";
 import Hero from "./hero/Hero";
 import Collaboration from "./collaboration/Collaboration";
 import Lenders from "./lenders/Lenders";
+import SavingsCalculator from "./savings-calculator/SavingsCalculator";
+import WhyChoose from "./why-choose/WhyChoose";
 
 const HomeSection = () => {
   return (
@@ -16,6 +17,12 @@ const HomeSection = () => {
 
       {/* 3. Lenders Section */}
       <Lenders />
+
+      {/* 4. Savings Calculator Section */}
+      <SavingsCalculator />
+
+      {/* 5. Why Choose Clear Credit Section */}
+      <WhyChoose />
     </div>
   );
 };

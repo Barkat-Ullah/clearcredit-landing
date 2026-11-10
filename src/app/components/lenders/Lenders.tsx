@@ -69,11 +69,11 @@ export const Lenders = () => {
   const [sortOption, setSortOption] = useState("APR");
 
   return (
-    <section className="relative overflow-hidden bg-white py-14 sm:py-20 md:py-24">
+    <section className="relative overflow-hidden bg-white py-14 md:py-24">
       {/* Decorative Right Circle Ring from public/normal-circle.png */}
-      <div className="absolute -right-24 sm:-right-36 md:-right-48 top-1/2 -translate-y-1/2 w-64 sm:w-[420px] md:w-[540px] aspect-square pointer-events-none select-none z-0 opacity-70">
+      <div className="absolute -right-24 md:-right-78 top-1/2 -translate-y-1/2 w-64 sm:w-105 md:w-135 aspect-square pointer-events-none select-none z-0 opacity-70">
         <Image
-          src="/normal-circle.png"
+          src="/shadow-circle.png"
           alt=""
           fill
           sizes="(max-width: 768px) 280px, 540px"
@@ -107,7 +107,7 @@ export const Lenders = () => {
                 type="text"
                 value={filterAmount}
                 onChange={(e) => setFilterAmount(e.target.value)}
-                className="h-10 px-3.5 text-sm font-medium text-primary-2 border border-primary-2/25 rounded-lg bg-white w-28 sm:w-32 text-center focus:outline-none focus:ring-2 focus:ring-primary-1 focus:border-primary-1 transition-all"
+                className="h-10 px-3.5 text-sm font-medium text-primary-2 border border-primary-2/25 rounded-lg bg-white w-28 sm:w-32 text-center focus:outline-none focus:ring-2 focus:ring-primary-1 transition-all"
                 aria-label="Filter by loan amount"
               />
             </div>

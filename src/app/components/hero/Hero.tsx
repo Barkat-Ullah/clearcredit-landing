@@ -13,11 +13,11 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-white pt-8 sm:pt-12 md:pt-16 pb-12 sm:pb-16 md:pb-20">
+    <section className="relative overflow-hidden bg-white pt-8 md:pt-16 pb-12 md:pb-20">
       {/* Background Decorative Circle (Left Side) */}
-      <div className="absolute -left-28 sm:-left-36 md:-left-44 top-1/2 -translate-y-1/2 w-72 sm:w-[480px] md:w-[580px] aspect-square pointer-events-none select-none z-0 opacity-80">
+      <div className="absolute -left-28  md:-left-74 top-1/2 -translate-y-1/2 w-72 sm:w-120 md:w-145 aspect-square pointer-events-none select-none z-0 opacity-80">
         <Image
-          src="/secondary-circle.png"
+          src="/shadow-circle.png"
           alt=""
           fill
           priority
@@ -48,14 +48,14 @@ export const Hero = () => {
             <div className="mt-5 sm:mt-6 space-y-2.5">
               <div className="flex items-center gap-2.5 text-sm sm:text-base font-medium text-primary-2/90">
                 <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[#10B981] text-white shrink-0">
-                  <Check className="w-3.5 h-3.5 stroke-[3]" />
+                  <Check className="w-3.5 h-3.5 stroke-3" />
                 </span>
                 <span>Rates from 5.20% - 35.99% APR1</span>
               </div>
 
               <div className="flex items-center gap-2.5 text-sm sm:text-base font-medium text-primary-2/90">
                 <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[#10B981] text-white shrink-0">
-                  <Check className="w-3.5 h-3.5 stroke-[3]" />
+                  <Check className="w-3.5 h-3.5 stroke-3" />
                 </span>
                 <span>Loan amounts from $600 to $200,000</span>
               </div>
@@ -64,14 +64,14 @@ export const Hero = () => {
             {/* Form Input + Submit Card */}
             <form
               onSubmit={handleSubmit}
-              className="mt-6 sm:mt-8 w-full max-w-md bg-white border border-primary-2/15 rounded-xl sm:rounded-2xl p-1.5 sm:p-2 shadow-sm flex items-center justify-between gap-2 focus-within:ring-2 focus-within:ring-primary-1 focus-within:border-primary-1 transition-all"
+              className="mt-6 sm:mt-8 w-full max-w-md bg-white border border-primary-2/15 rounded-xl sm:rounded-2xl p-1.5 sm:p-2 shadow-sm flex items-center justify-between gap-2 focus-within:ring-2 focus-within:ring-primary-1 transition-all"
             >
               <input
                 type="text"
                 value={loanAmount}
                 onChange={(e) => setLoanAmount(e.target.value)}
                 placeholder="Enter amount ($600 - $200,000)"
-                className="w-full bg-transparent px-3 py-2 text-sm sm:text-base text-primary-2 placeholder:text-primary-2/45 focus:outline-none"
+                className="w-full bg-transparent px-3 py-2 text-sm sm:text-base text-primary-2 focus:outline-none"
                 aria-label="Enter loan amount"
               />
               <button
@@ -135,7 +135,7 @@ export const Hero = () => {
 
           {/* Right Column Illustration */}
           <div className="lg:col-span-6 xl:col-span-6 relative flex items-center justify-center mt-6 lg:mt-0">
-            <div className="relative w-full max-w-lg sm:max-w-xl lg:max-w-none aspect-[3252/2504]">
+            <div className="relative w-full max-w-lg sm:max-w-xl lg:max-w-none aspect-3252/2504">
               <Image
                 src="/hero-img.png"
                 alt="ClearCredit Top Lenders"
