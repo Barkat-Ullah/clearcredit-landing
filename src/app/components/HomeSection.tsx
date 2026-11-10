@@ -5,6 +5,8 @@ import Collaboration from "./collaboration/Collaboration";
 import Lenders from "./lenders/Lenders";
 import SavingsCalculator from "./savings-calculator/SavingsCalculator";
 import WhyChoose from "./why-choose/WhyChoose";
+import Services from "./Services/Services";
+import Faq from "./Faq/Faq";
 
 const HomeSection = () => {
   return (
@@ -23,6 +25,12 @@ const HomeSection = () => {
 
       {/* 5. Why Choose Clear Credit Section */}
       <WhyChoose />
+
+      {/* 6. Our Services Section */}
+      <Services />
+
+      {/* 7. FAQ Section */}
+      <Faq />
     </div>
   );
 };

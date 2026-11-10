@@ -78,7 +78,7 @@ const CircularGauge: React.FC<GaugeProps> = ({
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-1 pointer-events-none">
         <div className="flex items-center justify-center gap-0.5 text-primary-2 font-extrabold text-base sm:text-lg tracking-tight leading-none">
           <span>{value}</span>
-          <ArrowDown className="w-3.5 h-3.5 text-emerald-500 stroke-[3] shrink-0" />
+          <ArrowDown className="w-3.5 h-3.5 text-emerald-500 stroke-3 shrink-0" />
         </div>
         <span className="text-[10px] sm:text-[11px] font-medium text-primary-2/70 leading-tight mt-1">
           {label}
@@ -146,7 +146,7 @@ export const SavingsCalculator = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-white py-16 sm:py-20 md:py-24">
+    <section id="calculator" className="relative overflow-hidden bg-white py-16 sm:py-20 md:py-24">
       {/* Decorative Left Circle Ring (secondary-circle.png) */}
       <div className="absolute -left-16 md:-left-116 top-1/3 -translate-y-1/2 w-80 md:w-170 aspect-square pointer-events-none select-none z-0">
         <Image
@@ -182,7 +182,7 @@ export const SavingsCalculator = () => {
         </div>
 
         {/* Calculator Main Card */}
-        <div className="mt-10 sm:mt-12 max-w-[620px] mx-auto bg-white rounded-[24px] sm:rounded-[32px] border border-[#E2EBEF] p-6 sm:p-8 md:p-10 shadow-[0_4px_30px_rgba(26,64,72,0.06)]">
+        <div className="mt-10 sm:mt-12 max-w-155 mx-auto bg-white rounded-3xl border border-[#E2EBEF] p-6 sm:p-8 md:p-10 shadow-[0_4px_30px_rgba(26,64,72,0.06)]">
           {/* Step 1: Enter your current loan details */}
           <div>
             <h3 className="text-sm sm:text-base font-bold text-primary-2 mb-3">
@@ -190,7 +190,7 @@ export const SavingsCalculator = () => {
             </h3>
 
             {/* Loan Amount Input Box */}
-            <div className="border border-[#92DEEA] hover:border-primary-1 focus-within:border-primary-1 focus-within:ring-2 focus-within:ring-primary-1/20 rounded-xl px-4 py-3 flex items-center justify-between transition-all bg-white">
+            <div className="border border-[#92DEEA] hover:border-primary-1 focus-within:ring-2 focus-within:ring-primary-1/20 rounded-xl px-4 py-3 flex items-center justify-between transition-all bg-white">
               <label
                 htmlFor={amountInputId}
                 className="text-primary-1 font-semibold text-sm sm:text-[15px] cursor-pointer select-none"
@@ -211,7 +211,7 @@ export const SavingsCalculator = () => {
             {/* Interest Rate & Loan Term 2-Column Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mt-3">
               {/* Interest Rate */}
-              <div className="border border-[#92DEEA] hover:border-primary-1 focus-within:border-primary-1 focus-within:ring-2 focus-within:ring-primary-1/20 rounded-xl px-4 py-3 flex items-center justify-between transition-all bg-white">
+              <div className="border border-[#92DEEA] hover:border-primary-1 focus-within:ring-2 focus-within:ring-primary-1/20 rounded-xl px-4 py-3 flex items-center justify-between transition-all bg-white">
                 <span className="text-primary-1 font-semibold text-sm sm:text-[15px] select-none">
                   Interest Rate
                 </span>
@@ -233,7 +233,7 @@ export const SavingsCalculator = () => {
               </div>
 
               {/* Loan Term */}
-              <div className="border border-[#92DEEA] hover:border-primary-1 focus-within:border-primary-1 focus-within:ring-2 focus-within:ring-primary-1/20 rounded-xl px-4 py-3 flex items-center justify-between transition-all bg-white relative">
+              <div className="border border-[#92DEEA] hover:border-primary-1 focus-within:ring-2 focus-within:ring-primary-1/20 rounded-xl px-4 py-3 flex items-center justify-between transition-all bg-white relative">
                 <span className="text-primary-1 font-semibold text-sm sm:text-[15px] select-none">
                   Loan Term
                 </span>
@@ -251,7 +251,7 @@ export const SavingsCalculator = () => {
                     <option value={5}>5 Years</option>
                     <option value={7}>7 Years</option>
                   </select>
-                  <div className="h-4 w-[1px] bg-primary-2/20" />
+                  <div className="h-4 w-px bg-primary-2/20" />
                   <ChevronDown className="w-4 h-4 text-primary-1 stroke-[2.5] pointer-events-none" />
                 </div>
               </div>
@@ -271,7 +271,7 @@ export const SavingsCalculator = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               {/* Interest Rate */}
-              <div className="border border-[#92DEEA] hover:border-primary-1 focus-within:border-primary-1 focus-within:ring-2 focus-within:ring-primary-1/20 rounded-xl px-4 py-3 flex items-center justify-between transition-all bg-white">
+              <div className="border border-[#92DEEA] hover:border-primary-1 focus-within:ring-2 focus-within:ring-primary-1/20 rounded-xl px-4 py-3 flex items-center justify-between transition-all bg-white">
                 <span className="text-primary-1 font-semibold text-sm sm:text-[15px] select-none">
                   Interest Rate
                 </span>
@@ -293,7 +293,7 @@ export const SavingsCalculator = () => {
               </div>
 
               {/* Loan Term */}
-              <div className="border border-[#92DEEA] hover:border-primary-1 focus-within:border-primary-1 focus-within:ring-2 focus-within:ring-primary-1/20 rounded-xl px-4 py-3 flex items-center justify-between transition-all bg-white relative">
+              <div className="border border-[#92DEEA] hover:border-primary-1 focus-within:ring-2 focus-within:ring-primary-1/20 rounded-xl px-4 py-3 flex items-center justify-between transition-all bg-white relative">
                 <span className="text-primary-1 font-semibold text-sm sm:text-[15px] select-none">
                   Loan Term
                 </span>
@@ -311,7 +311,7 @@ export const SavingsCalculator = () => {
                     <option value={5}>5 Years</option>
                     <option value={7}>7 Years</option>
                   </select>
-                  <div className="h-4 w-[1px] bg-primary-2/20" />
+                  <div className="h-4 w-px bg-primary-2/20" />
                   <ChevronDown className="w-4 h-4 text-primary-1 stroke-[2.5] pointer-events-none" />
                 </div>
               </div>
